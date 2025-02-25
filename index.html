@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Obfuscadeado - Obfuscador Avançado de JavaScript</title>
+  <!-- Favicon -->
+  <link rel="icon" href="Icon.png" type="image/png">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Link para o CSS -->
+  <link rel="stylesheet" href="obfuscator.css">
+  <!-- Script do Obfuscador -->
+  <script src="https://cdn.jsdelivr.net/npm/javascript-obfuscator/dist/index.browser.js" defer></script>
+  <!-- Biblioteca SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Logo e Nome do Projeto -->
+    <div class="logo-container">
+      <img src="Icon.png" alt="Logo" class="logo">
+      <span class="project-name">Obfuscadeado</span>
+    </div>
+    
+    <h2>Obfuscador Avançado de JavaScript</h2>
+    <p>Insira seu código JavaScript abaixo e clique no botão para obfuscar.</p>
+
+    <!-- Área para os códigos -->
+    <div class="textareas-container">
+      <div class="textarea-group">
+        <h3>Código Original</h3>
+        <textarea id="originalCode" placeholder="Cole aqui seu código JavaScript"></textarea>
+      </div>
+      <div class="textarea-group">
+        <h3>Código Obfuscado</h3>
+        <textarea id="obfuscatedCode" placeholder="O código obfuscado aparecerá aqui" readonly></textarea>
+      </div>
+    </div>
+
+    <!-- Botão de Obfuscar -->
+    <button onclick="obfuscateCode()">Obfuscar Código</button>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>Desenvolvido por William Fagundes</p>
+      <p>© 2025 - Todos os direitos reservados</p>
+    </footer>
+  </div>
+  <!-- Link para o JavaScript -->
+  <script src="obfuscator.js" defer></script>
+</body>
+</html>
